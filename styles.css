@@ -33,7 +33,7 @@ body {
 button {
   cursor: pointer;
   background-color: white;
-  border: 1px solid hsl(0 0% 100%);
+  border: none;
   display: inline-flex;
   color: #25232E;
   align-items: center;
@@ -112,6 +112,7 @@ button[aria-current="true"] {
 }
 
 .zoom-controls button {
+  border: 1px solid hsl(0 0% 100%);
   background-color: transparent;
   color: white;
 }
