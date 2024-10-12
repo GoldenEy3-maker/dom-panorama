@@ -135,8 +135,8 @@ function setTowerHandler(tower) {
       },
     })
     .then(() => {
-      renderFloors(tower);
-      setCurrentFloor(floor);
+      // renderFloors(tower);
+      // setCurrentFloor(floor);
       setCaption(floor);
     })
     .finally(() => {
@@ -168,7 +168,7 @@ function setTowerHandler(tower) {
 
 document.addEventListener("click", (event) => {
   const setTowerButton = event.target.closest("[data-set-tower]");
-  const setFloorButton = event.target.closest("[data-set-floor]");
+  // const setFloorButton = event.target.closest("[data-set-floor]");
   const fullscreenButton = event.target.closest("#fullscreen");
   const zoomInButton = event.target.closest("#zoom-in");
   const zoomOutButton = event.target.closest("#zoom-out");
