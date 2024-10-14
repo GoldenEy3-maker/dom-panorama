@@ -1,13 +1,5 @@
 import sharp from "sharp";
-import {
-  readdir,
-  mkdir,
-  readFile,
-  unlink,
-  writeFile,
-  rmdir,
-  rm,
-} from "node:fs/promises";
+import { readdir, mkdir, readFile, writeFile, rm } from "node:fs/promises";
 
 function extractBasename(file) {
   const extIdx = file.lastIndexOf(".");
