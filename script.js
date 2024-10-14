@@ -52,9 +52,9 @@ const viewer = new Viewer({
     width: 8192,
     cols: 16,
     rows: 8,
-    baseUrl: `./assets/low/${currentTower}/${currentFloor.value}.jpg`,
+    baseUrl: `./assets/low/${currentTower}/${currentFloor.value}.webp`,
     tileUrl: (col, row) => {
-      return `./assets/tiles/${currentTower}/${currentFloor.value}_${col}_${row}.jpg`;
+      return `./assets/tiles/${currentTower}/${currentFloor.value}_${col}_${row}.webp`;
     },
   },
   lang: {
@@ -129,9 +129,9 @@ function setTowerHandler(tower) {
       width: 8192,
       cols: 16,
       rows: 8,
-      baseUrl: `./assets/low/${tower}/${floor.value}.jpg`,
+      baseUrl: `./assets/low/${tower}/${floor.value}.webp`,
       tileUrl: (col, row) => {
-        return `./assets/tiles/${tower}/${floor.value}_${col}_${row}.jpg`;
+        return `./assets/tiles/${tower}/${floor.value}_${col}_${row}.webp`;
       },
     })
     .then(() => {
